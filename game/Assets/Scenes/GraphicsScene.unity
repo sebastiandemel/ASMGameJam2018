@@ -4798,7 +4798,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 104059511}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4.99, y: 4.4, z: -8.78}
+  m_LocalPosition: {x: 5.01, y: 4.4, z: -9.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1446054877}
@@ -5300,8 +5300,8 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     startSize:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 0.7
+      minMaxState: 0
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5353,7 +5353,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -5406,7 +5406,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 0
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -5677,7 +5677,7 @@ ParticleSystem:
     serializedVersion: 5
     enabled: 1
     type: 4
-    angle: 2.86301
+    angle: 1.4401451
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -5707,7 +5707,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.27381298
+      value: 0.3933984
       mode: 0
       spread: 0
       speed:
@@ -8453,9 +8453,9 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 3
-    type: 1
+    type: 0
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
@@ -8470,7 +8470,7 @@ ParticleSystem:
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.6
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -8523,7 +8523,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -8576,7 +8576,7 @@ ParticleSystem:
     m_EnergyLossOnCollision:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -9592,13 +9592,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309412783}
-  m_LocalRotation: {x: -0.22378306, y: -0.67076164, z: -0.22378306, w: 0.67076164}
-  m_LocalPosition: {x: -1.1799995, y: 1.06, z: 0.2700001}
+  m_LocalRotation: {x: -0.005712196, y: -0.9431453, z: -0.33188653, w: 0.017197743}
+  m_LocalPosition: {x: -6.18, y: 4.29, z: -12.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 45288154}
+  m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: -36.9, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: -38.773003, y: -177.89401, z: -0.047000002}
 --- !u!1 &359063181
 GameObject:
   m_ObjectHideFlags: 0
@@ -14752,23 +14752,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 789eec4c858593f4b8dae58d643a1beb, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &1258877226 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: b5b208ec97eb9d546991e54244b80a55,
-    type: 3}
-  m_PrefabInternal: {fileID: 1643757343}
---- !u!65 &1258877230
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1258877226}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.80435, y: 3.8043509, z: 5.969692}
-  m_Center: {x: 0, y: 0, z: 4.8893147}
 --- !u!1 &1446054876
 GameObject:
   m_ObjectHideFlags: 0
@@ -19542,23 +19525,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: 3ebea76f56811204aa2e4ff843dd7eed,
     type: 3}
   m_PrefabInternal: {fileID: 1484064588}
---- !u!1 &1569046521 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: b5b208ec97eb9d546991e54244b80a55,
-    type: 3}
-  m_PrefabInternal: {fileID: 1643757343}
---- !u!65 &1569046525
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1569046521}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2.0000005, z: 2.5926287}
-  m_Center: {x: 0, y: 0, z: 0.6081542}
 --- !u!1001 &1572753916
 Prefab:
   m_ObjectHideFlags: 0
