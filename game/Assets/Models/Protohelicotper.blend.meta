@@ -1,62 +1,34 @@
 fileFormatVersion: 2
-guid: 3ebea76f56811204aa2e4ff843dd7eed
+guid: ab80962120937824186d816b9de47962
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Body
-    100002: Hand
-    100004: Hand_001
-    100006: Head
-    100008: Helmet
-    100010: Leg
-    100012: Leg_001
-    100014: //RootNode
-    100016: Waist
-    100018: Backpack
-    100020: Cylinder
-    400000: Body
-    400002: Hand
-    400004: Hand_001
-    400006: Head
-    400008: Helmet
-    400010: Leg
-    400012: Leg_001
-    400014: //RootNode
-    400016: Waist
-    400018: Backpack
-    400020: Cylinder
+    100000: //RootNode
+    100002: Body
+    100004: LandingGear
+    100006: ThopterBack
+    100008: ThopterMain
+    400000: //RootNode
+    400002: Body
+    400004: LandingGear
+    400006: ThopterBack
+    400008: ThopterMain
     2100000: Material
-    2100002: unnamed
-    2300000: Body
-    2300002: Hand
-    2300004: Hand_001
-    2300006: Head
-    2300008: Helmet
-    2300010: Leg
-    2300012: Leg_001
-    2300014: Waist
-    2300016: Backpack
-    2300018: Cylinder
-    3300000: Body
-    3300002: Hand
-    3300004: Hand_001
-    3300006: Head
-    3300008: Helmet
-    3300010: Leg
-    3300012: Leg_001
-    3300014: Waist
-    3300016: Backpack
-    3300018: Cylinder
-    4300000: Head
-    4300002: Hand_001
-    4300004: Hand
-    4300006: Leg_001
-    4300008: Leg
-    4300010: Waist
-    4300012: Helmet
-    4300014: Body
-    4300016: Cylinder
-    4300018: Backpack
+    2300000: //RootNode
+    2300002: Body
+    2300004: LandingGear
+    2300006: ThopterBack
+    2300008: ThopterMain
+    3300000: //RootNode
+    3300002: Body
+    3300004: LandingGear
+    3300006: ThopterBack
+    3300008: ThopterMain
+    4300000: Cube
+    4300002: LandingGear
+    4300004: ThopterBack
+    4300006: ThopterMain
+    4300008: Body
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
