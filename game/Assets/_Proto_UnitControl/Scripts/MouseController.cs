@@ -61,7 +61,6 @@ public class MouseController : MonoBehaviour {
                 DeselectUnit();
                 SelectUnit(hit.collider.gameObject);
             }
-
         }
         else if (buttonNumber == 1 && isUnitSelected && Physics.Raycast(ray, out hit, 50, moveMask))
         {
