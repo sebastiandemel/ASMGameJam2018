@@ -35,6 +35,8 @@ public class ForestManager : MonoBehaviour {
 
     private System.Random _random;
 
+    private float _fireCalcTrigger = 0;
+
     void Awake() {
         _map = new ForestElement[Width,Height];
         _fires = new Dictionary<string, FireElement>(2);
@@ -56,13 +58,23 @@ public class ForestManager : MonoBehaviour {
 
         GenerateForrest();
 
-        AddFire(10, 10);
+        var centerX = (int) Math.Round( Width / 2.0f, 0);
+        var centerY = (int) Math.Round( Height / 2.0f, 0);
+        AddFire(centerX, centerY);
+    }
+
+    void Start() {
     }
 
     void Update() {
+        _fireCalcTrigger += Time.deltaTime;
 
-        foreach(var fire in _fires){
-            CalculateFireSpread(fire.Key);
+        if(_fireCalcTrigger > 0.5f){
+            _fireCalcTrigger = 0.0f;
+
+            foreach(var fire in _fires){
+                CalculateFire(fire.Key);
+            }
         }
 
         foreach(var water in _waterTargets){
@@ -152,6 +164,18 @@ public class ForestManager : MonoBehaviour {
         }
     }
 
+    void AddWater(int x, int y)
+    {
+        var keyName = "water-" + CreateKey(x, y);
+        if( !_waterTargets.ContainsKey(keyName) )
+        {
+            _waterTargets.Add(keyName, new WaterElement(x, y, 1));
+        }
+        else{
+            Debug.LogWarning(String.Format("Water exists at {0}, {1}", x, y));
+        }
+    }
+
     string CreateKey(int x, int y){
         return x.ToString() + "," + y.ToString();
     }
@@ -160,49 +184,49 @@ public class ForestManager : MonoBehaviour {
         var targets = new Dictionary<Vector2Int, ForestElement>(9);
 
         // Left Top
-        if(x - 1 > 0 && y - 1 > 0 && _map[x - 1, y - 1].Type == ForestElementType.TREE){
+        if(x - 1 > -1 && y - 1 > -1 && _map[x - 1, y - 1].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x - 1, y - 1), _map[x - 1, y - 1]);
         }
 
         // Middle Top
-        if(y - 1 > 0 && _map[x, y - 1].Type == ForestElementType.TREE){
+        if(y - 1 > -1 && _map[x, y - 1].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x, y - 1), _map[x, y - 1]);
         }
 
         // Right Top
-        if(x + 1 > 0 && y - 1 > 0 && _map[x + 1, y - 1].Type == ForestElementType.TREE){
+        if(x + 1 < Width && y - 1 > -1 && _map[x + 1, y - 1].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x + 1, y - 1), _map[x + 1, y - 1]);
         }
 
         // Left Middle
-        if(x - 1 > 0 && _map[x - 1, y].Type == ForestElementType.TREE){
+        if(x - 1 > -1 && _map[x - 1, y].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x - 1, y), _map[x - 1, y]);
         }
 
         // Right Middle
-        if(x + 1 > 0 && _map[x - 1, y].Type == ForestElementType.TREE){
+        if(x + 1 < Width && _map[x - 1, y].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x + 1, y), _map[x + 1, y]);
         }
 
         // Left Bottom
-        if(x - 1 > 0 && y + 1 > 0 && _map[x - 1, y + 1].Type == ForestElementType.TREE){
+        if(x - 1 > -1 && y + 1 < Height && _map[x - 1, y + 1].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x - 1, y + 1), _map[x - 1, y + 1]);
         }
 
         // Middle Bottom
-        if(y - 1 > 0 && _map[x, y + 1].Type == ForestElementType.TREE){
+        if(y - 1 < Height && _map[x, y + 1].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x, y + 1), _map[x, y + 1]);
         }
 
         // Right Bottom
-        if(x + 1 > 0 && y + 1 > 0 && _map[x + 1, y + 1].Type == ForestElementType.TREE){
+        if(x + 1 < Width && y + 1 < Height && _map[x + 1, y + 1].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x + 1, y + 1), _map[x + 1, y + 1]);
         }
 
         return targets;
     }
 
-    void CalculateFireSpread(string fireName)
+    void CalculateFire(string fireName)
     {
         var fire = _fires[fireName];
 
@@ -214,19 +238,27 @@ public class ForestManager : MonoBehaviour {
             Debug.Log("Tree burned " + fireName);
         }
 
-        // Spread fire
-        var targetTrees = GetSpreadLocations(fire.X, fire.Y);
+        if(_fires.Count != Width * Height){
+            // Spread fire
+            var targetTrees = GetSpreadLocations(fire.X, fire.Y);
 
-        foreach(var tree in targetTrees){
-            if(_random.Next(0,100) < SpreadOdds){
-                AddFire(tree.Key.x, tree.Key.y);
-                Debug.Log("Fire spreads " + fireName);
+            foreach(var tree in targetTrees){
+                if(_random.Next(0,100) < SpreadOdds){
+                    AddFire(tree.Key.x, tree.Key.y);
+                    Debug.Log("Fire spreads " + fireName + " to " + tree.Key.x + ", " + tree.Key.y);
+                }
             }
         }
 
-        // Decay fire
+        // Decay fire or burn tree
         if(_map[fire.X, fire.Y].Healt == 0.0f){
             DecayFire(fire.X, fire.Y);
+        }
+        else if(_map[fire.X, fire.Y].Healt > 0.1f){
+            _map[fire.X, fire.Y].Healt -= 0.1f;
+        }
+        else if(_map[fire.X, fire.Y].Healt <= 0.1f){
+            _map[fire.X, fire.Y].Healt = 0.0f;
         }
 
         if(fire.Healt == 0.0f){
@@ -234,6 +266,7 @@ public class ForestManager : MonoBehaviour {
             Debug.Log("Removed fire " + fireName);
         }
     }    
+/*
     void OnDrawGizmos() {
         if (_map != null) {                
             var modelWidth = 12.0f;
@@ -253,5 +286,5 @@ public class ForestManager : MonoBehaviour {
                 }
             }
         }
-    }
+    }*/
 }

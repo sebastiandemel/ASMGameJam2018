@@ -8,13 +8,13 @@ public class TreeObject : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log("Child count: " + gameObject.transform.GetChildCount());
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		var health = ForestManager.instance.GetHealt(GridPosition.x, GridPosition.y);
-
+		var childCount = gameObject.transform.childCount;
+		
 		if(health == 0.0f){			
 			if(!gameObject.transform.GetChild(2).gameObject.activeInHierarchy){
 				gameObject.transform.GetChild(0).gameObject.SetActive(false); // Idle
