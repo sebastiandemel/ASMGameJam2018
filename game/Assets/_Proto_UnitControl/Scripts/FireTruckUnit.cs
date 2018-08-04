@@ -30,6 +30,27 @@ public class FireTruckUnit : BaseUnit {
         {
             DeployUnit();
         }
+
+        if (isSelected && Input.GetKeyDown(KeyCode.X))
+        {
+            sprayWater = !sprayWater;
+            if (sprayWater==false)
+            {
+                waterSprayEffect.SetActive(false);
+            }
+        }
+        if (sprayWater && Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 50, targetMask))
+            {
+                ShootWater(hit.point);
+            }
+        }
+        
     }
 
     private void DeployUnit()
@@ -43,14 +64,62 @@ public class FireTruckUnit : BaseUnit {
         }
     }
 
+    public override void Move(Vector3 destination)
+    {
+        base.Move(destination);
+        sprayWater = false;
+        waterSprayEffect.SetActive(false);       
+    }
+
     public override void ShootWater(Vector3 target)
     {
+        
         if (Vector3.Distance(transform.position, target) < range)
         {
-            Collider[] thingsOnFire = Physics.OverlapSphere(target,wateringRadius,burnableMask); 
+            Debug.Log("In Range");
+            Collider[] thingsOnFire = Physics.OverlapSphere(target, waterRadius, burnableMask);
+            waterSprayEffect.SetActive(sprayWater);
             
+            SpawnWater(target);
+            transform.rotation = Quaternion.LookRotation(target,transform.up);
+           
+            if (thingsOnFire != null)
+            {
+                int firesPutout = 0;
+                for (int i = 0; i < thingsOnFire.Length; i++)
+                {
+                    if (thingsOnFire[i].GetComponent<Burnable>() != null)
+                    {
+                        if (thingsOnFire[i].GetComponent<Burnable>().isOnFire)
+                            thingsOnFire[i].GetComponent<Burnable>().isOnFire = false;
+                        else
+                        {
+                            thingsOnFire[i].GetComponent<Burnable>().moistureAmount = 100;
+                        }
 
+                        firesPutout++;
+                    }
+                }
+                Debug.Log("Fires put out " + firesPutout);
+            }
+            waterAmount--;
+           // StartCoroutine(SprayCooldown(target));
         }
+        else
+        {
+            StopCoroutine(SprayCooldown(target));
+           // navMeshAgent.stoppingDistance = 0;
+        }
+    }
+
+    IEnumerator SprayCooldown(Vector3 target)
+    {
+       
+        if (!sprayWater)
+            yield return null;
+
+        yield return new WaitForSeconds(1f);
+        ShootWater(target);
     }
 
     public override void TakeDamage(float damageAmount)

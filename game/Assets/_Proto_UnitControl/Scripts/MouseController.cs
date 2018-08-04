@@ -64,13 +64,15 @@ public class MouseController : MonoBehaviour {
         }
         else if (buttonNumber == 1 && isUnitSelected && Physics.Raycast(ray, out hit, 50, moveMask))
         {
-            Debug.Log(hit.collider + " Move");
+
             ShowMoveIcon(hit.point);
             MoveUnit(hit.point);
         }
         else
         {
-            DeselectUnit();
+            if(currentSelectedUnit!=null && !currentSelectedUnit.GetComponent<BaseUnit>().sprayWater)
+                DeselectUnit();
+
         }
     }
 
@@ -84,7 +86,7 @@ public class MouseController : MonoBehaviour {
     // For what happens when player selects unit
     void SelectUnit(GameObject unit)
     {
-        if (currentSelectedUnit.GetComponent<BaseUnit>() != null)
+        if (currentSelectedUnit != null)
         {
             currentSelectedUnit.GetComponent<BaseUnit>().isSelected = false;
         }

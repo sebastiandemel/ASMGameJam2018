@@ -14,21 +14,23 @@ public class BaseUnit : MonoBehaviour {
     public float maxHealth;
     public float waterAmount;
     public float range;
-    public float wateringRadius;
+    public float waterRadius;
     public GameObject waterShotPrefab;
     public bool isSelected;
+    public bool sprayWater;
     public LayerMask targetMask;
     public LayerMask burnableMask;
     public GameObject selectionObject;
     public GameObject moveEffect;
 
     protected float currentHealth;
-    private NavMeshAgent navMeshAgent;
+    protected NavMeshAgent navMeshAgent;
 
     protected virtual void Update()
     {
         selectionObject.SetActive(isSelected);
-        moveEffect.SetActive(navMeshAgent.isStopped);
+        if(moveEffect!=null)
+            moveEffect.SetActive(navMeshAgent.isStopped);
     }
     private void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -52,5 +54,18 @@ public class BaseUnit : MonoBehaviour {
 
 
     protected virtual void OnDeath() { }
-	
+
+    protected void SpawnWater(Vector3 waterPoint)
+    {
+        GameObject waterInstance = Instantiate(waterShotPrefab, waterPoint, Quaternion.identity);
+        waterInstance.transform.localScale = new Vector3(waterRadius, waterRadius, waterRadius);
+        StartCoroutine(DestroyWaterInstance(waterInstance));
+    }
+
+    protected IEnumerator DestroyWaterInstance(GameObject objectInstance)
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(objectInstance);
+    }
+
 }
