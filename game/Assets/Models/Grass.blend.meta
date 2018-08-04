@@ -1,62 +1,14 @@
 fileFormatVersion: 2
-guid: 789eec4c858593f4b8dae58d643a1beb
+guid: 5d43813b7215cc446ae420ecda2b5f31
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Ladder
-    100002: //RootNode
-    100004: Tires
-    100006: Tires_001
-    100008: Tires_002
-    100010: TopThings
-    100012: TopThings_001
-    100014: Truck
-    100016: LadderTop
-    100018: WaterGun
-    100020: WaterGunBase
-    400000: Ladder
-    400002: //RootNode
-    400004: Tires
-    400006: Tires_001
-    400008: Tires_002
-    400010: TopThings
-    400012: TopThings_001
-    400014: Truck
-    400016: LadderTop
-    400018: WaterGun
-    400020: WaterGunBase
+    100000: //RootNode
+    400000: //RootNode
     2100000: unnamed
-    2100002: Material
-    2300000: Ladder
-    2300002: Tires
-    2300004: Tires_001
-    2300006: Tires_002
-    2300008: TopThings
-    2300010: TopThings_001
-    2300012: Truck
-    2300014: LadderTop
-    2300016: WaterGun
-    2300018: WaterGunBase
-    3300000: Ladder
-    3300002: Tires
-    3300004: Tires_001
-    3300006: Tires_002
-    3300008: TopThings
-    3300010: TopThings_001
-    3300012: Truck
-    3300014: LadderTop
-    3300016: WaterGun
-    3300018: WaterGunBase
-    4300000: Ladder
-    4300002: TopThings
-    4300004: TopThings_001
-    4300006: Tires_002
-    4300008: Tires_001
-    4300010: Tires
-    4300012: Truck
-    4300014: LadderTop
-    4300016: WaterGun
-    4300018: WaterGunBase
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cube_008
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
