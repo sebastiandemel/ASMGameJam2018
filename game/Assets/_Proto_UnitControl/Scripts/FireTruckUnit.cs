@@ -26,7 +26,7 @@ public class FireTruckUnit : BaseUnit {
             currCooldown += Time.deltaTime;
             return;
         }
-        if (isSelected && deploymentUnit!=null && deploymentAmount > 0 && Input.GetKeyDown(KeyCode.D))
+        if (isSelected && deploymentUnit!=null && deploymentAmount > 0 && Input.GetKeyDown(KeyCode.C))
         {
             DeployUnit();
         }
@@ -62,6 +62,7 @@ public class FireTruckUnit : BaseUnit {
         {
             source.PlayOneShot(deployClip);
         }
+        deploymentAmount--;
     }
 
     public override void Move(Vector3 destination)
