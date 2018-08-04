@@ -1410,6 +1410,12 @@ MonoBehaviour:
   wateringRadius: 3
   waterShotPrefab: {fileID: 0}
   isSelected: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  burnableMask:
+    serializedVersion: 2
+    m_Bits: 0
   selectionObject: {fileID: 0}
   moveEffect: {fileID: 0}
   deathEffect: {fileID: 0}
@@ -6260,6 +6266,10 @@ Prefab:
     - target: {fileID: 4930483206845408, guid: dc57cfbb5f3646d47bc3f145ae220209, type: 2}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1381006202331878, guid: dc57cfbb5f3646d47bc3f145ae220209, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc57cfbb5f3646d47bc3f145ae220209, type: 2}

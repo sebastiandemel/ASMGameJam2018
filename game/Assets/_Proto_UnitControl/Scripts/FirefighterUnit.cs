@@ -22,10 +22,7 @@ public class FirefighterUnit : BaseUnit {
     public override void Move(Vector3 destination)
     {
         base.Move(destination);
-        if (anim != null)
-        {
-
-        }
+        
     }
 
     public override void ShootWater(Vector3 target)
@@ -48,6 +45,21 @@ public class FirefighterUnit : BaseUnit {
     protected override void OnDeath()
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
+        
+    }
+
+    void SetAnimationState(int stateIndex)
+    {
+        if (anim != null)
+        {
+            anim.SetInteger("StateIndex",stateIndex);
+        }
+    }
+
+    IEnumerator Dying()
+    {
+
+        yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }
 }
