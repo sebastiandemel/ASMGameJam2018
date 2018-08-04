@@ -7,13 +7,13 @@ public class FirefighterUnit : BaseUnit {
     public GameObject deathEffect;
     public GameObject waterSprayEffect;
     [SerializeField]
-    private Animator anim;
-	
-	// Update is called once per frame
-	protected override void Update () {
-        base.Update();
+    public Animator anim;
 
-        
+    
+
+    // Update is called once per frame
+    protected override void Update () {
+        base.Update();        
 
         if (sprayWater && waterAmount >0 && Input.GetMouseButtonDown(0))
         {
@@ -41,13 +41,18 @@ public class FirefighterUnit : BaseUnit {
             SetAnimationState(0);
         }
 
+        if (takingDamage)
+        {
+            TakeDamage(Time.deltaTime * damegeOverTimeRate);
+        }
+
     }
 
     public override void Move(Vector3 destination)
     {       
         base.Move(destination);
         sprayWater = false;
-        waterSprayEffect.SetActive(false);
+        waterSprayEffect.SetActive(sprayWater);
 
         SetAnimationState(1);
         Debug.Log(navMeshAgent);
@@ -61,9 +66,9 @@ public class FirefighterUnit : BaseUnit {
             Debug.Log("In Range");
             Collider[] thingsOnFire = Physics.OverlapSphere(target, waterRadius,burnableMask);
             waterSprayEffect.SetActive(sprayWater);
-            
+            Vector3 lookAt = target - transform.position;
             SpawnWater(target);
-            transform.rotation = Quaternion.LookRotation(transform.position - target, transform.up); 
+            transform.rotation = Quaternion.LookRotation(lookAt); 
             
             if (thingsOnFire != null)
             {
@@ -106,15 +111,17 @@ public class FirefighterUnit : BaseUnit {
 
     protected override void OnDeath()
     {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
-        
+        //Instantiate(deathEffect, transform.position, Quaternion.identity);
+
+        deathEffect.SetActive(true);
+        SetAnimationState(2);
     }
 
     void SetAnimationState(int stateIndex)
     {
         if (anim != null)
         {
-            anim.SetInteger("StateIndex",stateIndex);
+            anim.SetInteger("State",stateIndex);
         }
     }
 
@@ -123,5 +130,20 @@ public class FirefighterUnit : BaseUnit {
 
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Fire"))
+        {
+            takingDamage = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Fire"))
+        {
+            takingDamage = false;
+        }
     }
 }

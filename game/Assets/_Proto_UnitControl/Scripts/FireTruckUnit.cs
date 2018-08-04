@@ -79,9 +79,9 @@ public class FireTruckUnit : BaseUnit {
             Debug.Log("In Range");
             Collider[] thingsOnFire = Physics.OverlapSphere(target, waterRadius, burnableMask);
             waterSprayEffect.SetActive(sprayWater);
-            
+            Vector3 lookAt = target - transform.position;
             SpawnWater(target);
-            transform.rotation = Quaternion.LookRotation(target,transform.up);
+            transform.rotation = Quaternion.LookRotation(lookAt);
            
             if (thingsOnFire != null)
             {

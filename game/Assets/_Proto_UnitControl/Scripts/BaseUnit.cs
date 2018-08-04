@@ -26,6 +26,9 @@ public class BaseUnit : MonoBehaviour {
     protected float currentHealth;
     protected NavMeshAgent navMeshAgent;
 
+    protected bool takingDamage;
+    protected const float damegeOverTimeRate = 1f;
+
     protected virtual void Update()
     {
         selectionObject.SetActive(isSelected);
@@ -35,6 +38,7 @@ public class BaseUnit : MonoBehaviour {
     private void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = unitSpeed;
+        currentHealth = maxHealth;
     }
 
     public virtual void Move(Vector3 destination)

@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: HelicopterBody
+  m_Name: PineWoodMat 1
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -39,11 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-<<<<<<< HEAD
         m_Texture: {fileID: 0}
-=======
-        m_Texture: {fileID: 2800000, guid: 9182df35820229a4e8ae56f9f6af26ff, type: 3}
->>>>>>> 82282241322069cfb4f5a45e7279569ac0d79dd2
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -64,15 +60,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-<<<<<<< HEAD
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
-=======
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Metallic: 0.19
->>>>>>> 82282241322069cfb4f5a45e7279569ac0d79dd2
+    - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -82,9 +72,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-<<<<<<< HEAD
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
-=======
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
->>>>>>> 82282241322069cfb4f5a45e7279569ac0d79dd2
+    - _Color: {r: 0.3962264, g: 0.22560608, b: 0.061676756, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
