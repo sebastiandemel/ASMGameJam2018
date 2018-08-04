@@ -84,8 +84,18 @@ public class MouseController : MonoBehaviour {
     // For what happens when player selects unit
     void SelectUnit(GameObject unit)
     {
+        if (currentSelectedUnit.GetComponent<BaseUnit>() != null)
+        {
+            currentSelectedUnit.GetComponent<BaseUnit>().isSelected = false;
+        }
+
         currentSelectedUnit = unit.gameObject;
         isUnitSelected = true;
+
+        if (currentSelectedUnit.GetComponent<BaseUnit>() != null)
+        {
+            currentSelectedUnit.GetComponent<BaseUnit>().isSelected = isUnitSelected;
+        }
         // TODO: Add UI elements to be activated when selected, and maybe make them to face camera
         // Also sound effects
     }
@@ -93,16 +103,21 @@ public class MouseController : MonoBehaviour {
     // here we deselect the Unit
     void DeselectUnit()
     {
+        if (currentSelectedUnit.GetComponent<BaseUnit>() != null)
+        {
+            currentSelectedUnit.GetComponent<BaseUnit>().isSelected = false;
+
+        }
         currentSelectedUnit = null;
         isUnitSelected = false;
     }
     // function to give target destination for the Unit's NavMesh component
     void MoveUnit(Vector3 destination)
     {
-        NavMeshAgent agent = currentSelectedUnit.GetComponent<NavMeshAgent>();
+        BaseUnit agent = currentSelectedUnit.GetComponent<BaseUnit>();
         if (agent != null)
         {
-            agent.destination = destination;
+            agent.Move(destination);
         }
     }
 

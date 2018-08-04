@@ -17,11 +17,22 @@ public class BaseUnit : MonoBehaviour {
     public float wateringRadius;
     public GameObject waterShotPrefab;
     public bool isSelected;
+    public LayerMask targetMask;
+    public LayerMask burnableMask;
+    public GameObject selectionObject;
+    public GameObject moveEffect;
 
+    protected float currentHealth;
     private NavMeshAgent navMeshAgent;
 
+    protected virtual void Update()
+    {
+        selectionObject.SetActive(isSelected);
+        moveEffect.SetActive(navMeshAgent.isStopped);
+    }
     private void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.speed = unitSpeed;
     }
 
     public virtual void Move(Vector3 destination)
@@ -40,6 +51,6 @@ public class BaseUnit : MonoBehaviour {
     public virtual void TakeDamage(float damageAmount) { }
 
 
-    protected void OnDeath() { }
+    protected virtual void OnDeath() { }
 	
 }
