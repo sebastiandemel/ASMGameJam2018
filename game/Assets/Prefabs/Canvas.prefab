@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 114526902591286092}
   - component: {fileID: 114705123784755394}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 114928284956839468}
   - component: {fileID: 114931317882832452}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 114088276237817180}
   - component: {fileID: 114462738351515788}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: HelpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -782,7 +782,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Help
 --- !u!114 &114401813746093386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -815,7 +815,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Main
 --- !u!114 &114431468173869994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1269,7 +1269,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Restart
 --- !u!114 &114892964705636692
 MonoBehaviour:
   m_ObjectHideFlags: 1
