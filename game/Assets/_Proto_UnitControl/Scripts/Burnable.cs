@@ -18,4 +18,10 @@ public class Burnable : MonoBehaviour {
 	void Update () {
         burningEffect.SetActive(isOnFire);
 	}
+
+    void OnDeath()
+    {
+        GameManager.manager.FailedTrees++;
+        GameManager.manager.CheckState();
+    }
 }
