@@ -84,7 +84,7 @@ public class MouseController : MonoBehaviour {
     }
 
     // For what happens when player selects unit
-    void SelectUnit(GameObject unit)
+    public void SelectUnit(GameObject unit)
     {
         if (currentSelectedUnit != null)
         {

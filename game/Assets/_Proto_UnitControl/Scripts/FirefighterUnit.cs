@@ -8,7 +8,7 @@ public class FirefighterUnit : BaseUnit {
     public GameObject waterSprayEffect;
     [SerializeField]
     public Animator anim;
-
+    public AudioClip deathClip;
     
 
     // Update is called once per frame
@@ -115,6 +115,7 @@ public class FirefighterUnit : BaseUnit {
 
         deathEffect.SetActive(true);
         SetAnimationState(2);
+        StartCoroutine(Dying());
     }
 
     void SetAnimationState(int stateIndex)
@@ -128,7 +129,7 @@ public class FirefighterUnit : BaseUnit {
     IEnumerator Dying()
     {
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         Destroy(gameObject);
     }
 

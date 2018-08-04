@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4156434005205038}
   - component: {fileID: 135207098267304736}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4033988373684932
 Transform:
   m_ObjectHideFlags: 1
@@ -178,7 +178,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1343884507509098}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -14.6, y: -0.21, z: 10.1}
+  m_LocalPosition: {x: 9.4, y: -0.21, z: 10.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4853012361557270}
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burningEffect: {fileID: 1882164250530584}
-  isOnFire: 0
+  isOnFire: 1
   fireHealth: 0
   moistureAmount: 0
 --- !u!135 &135207098267304736
