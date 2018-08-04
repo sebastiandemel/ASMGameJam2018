@@ -9,7 +9,16 @@ public class FirefighterUnit : BaseUnit {
     [SerializeField]
     public Animator anim;
     public AudioClip deathClip;
-    
+    public AudioClip waterClip;
+    private AudioSource source;
+
+    private Vector3 oldTarget;
+    private float coolDownWater = 1f;
+
+    private void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     protected override void Update () {
@@ -36,7 +45,7 @@ public class FirefighterUnit : BaseUnit {
             }
         }
 
-        if (navMeshAgent.remainingDistance<=navMeshAgent.stoppingDistance)
+        if (isSelected && navMeshAgent.remainingDistance<=navMeshAgent.stoppingDistance)
         {
             SetAnimationState(0);
         }
@@ -45,6 +54,7 @@ public class FirefighterUnit : BaseUnit {
         {
             TakeDamage(Time.deltaTime * damegeOverTimeRate);
         }
+       
 
     }
 
@@ -63,13 +73,21 @@ public class FirefighterUnit : BaseUnit {
     {
         if (Vector3.Distance(transform.position, target) < range)
         {
+            oldTarget = target;
             Debug.Log("In Range");
-            Collider[] thingsOnFire = Physics.OverlapSphere(target, waterRadius,burnableMask);
-            waterSprayEffect.SetActive(sprayWater);
             Vector3 lookAt = target - transform.position;
-            SpawnWater(target);
-            transform.rotation = Quaternion.LookRotation(lookAt); 
+            transform.rotation = Quaternion.LookRotation(lookAt);
+
+            StartCoroutine(WaterCooldown(target));
+
+           /* Collider[] thingsOnFire = Physics.OverlapSphere(target, waterRadius,burnableMask);
+            waterSprayEffect.SetActive(sprayWater);
             
+            SpawnWater(target);
+           
+
+            source.PlayOneShot(waterClip);
+
             if (thingsOnFire != null)
             {
                 int firesPutout = 0;
@@ -89,8 +107,8 @@ public class FirefighterUnit : BaseUnit {
                   
                 }
                 Debug.Log("Fires put out " + firesPutout);
-            }
-            waterAmount--;
+            }*/
+            //waterAmount--;
         }
         else
         {
@@ -128,7 +146,6 @@ public class FirefighterUnit : BaseUnit {
 
     IEnumerator Dying()
     {
-
         yield return new WaitForSeconds(4f);
         Destroy(gameObject);
     }
@@ -146,5 +163,50 @@ public class FirefighterUnit : BaseUnit {
         {
             takingDamage = false;
         }
+    }
+
+    IEnumerator WaterCooldown(Vector3 target)
+    {
+        while (waterAmount>0)
+        {            
+            
+            Collider[] thingsOnFire = Physics.OverlapSphere(target, waterRadius, burnableMask);
+            waterSprayEffect.SetActive(sprayWater);
+            //Vector3 lookAt = target - transform.position;
+            SpawnWater(target);
+           // transform.rotation = Quaternion.LookRotation(lookAt);
+
+            source.PlayOneShot(waterClip);
+
+            if (thingsOnFire != null)
+            {
+                int firesPutout = 0;
+                for (int i = 0; i < thingsOnFire.Length; i++)
+                {
+                    if (thingsOnFire[i].GetComponent<Burnable>() != null)
+                    {
+                        if (thingsOnFire[i].GetComponent<Burnable>().isOnFire)
+                        {
+                            thingsOnFire[i].GetComponent<Burnable>().isOnFire = false;
+                            takingDamage = false;
+                        }
+                        else
+                        {
+                            thingsOnFire[i].GetComponent<Burnable>().moistureAmount = 100;
+                        }
+
+                        firesPutout++;
+                    }
+
+                }
+                Debug.Log("Fires put out " + firesPutout);
+            }
+            waterAmount--;
+            yield return new WaitForSeconds(coolDownWater);
+
+        }
+
+        sprayWater = false;
+        waterSprayEffect.SetActive(false);
     }
 }
