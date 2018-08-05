@@ -30,11 +30,13 @@ public class GridElement : MonoBehaviour {
 			{
 				Destroy(fireElement);
 				Debug.Log("Fire destroyed");
+
+				ForestManager.instance.RemoveFire(GridPosition.x, GridPosition.y);
 			}
 		}
 	}
 
-    void OnDeath()
+    public void OnDeath()
     {
 		Health = 0;
 		isDead = true;

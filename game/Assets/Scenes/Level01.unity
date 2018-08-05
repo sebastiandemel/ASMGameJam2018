@@ -4260,15 +4260,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e2927805e469d439deb1ac61f6eeff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxFires: 100
-  FireDecay: 0.01
-  FireDecline: 0.2
-  FireSpreadSeconds: 5
   Padding: 1
-  GridSize: 0
-  Wiggle: 0
+  GridSize: 14
+  Wiggle: 2
   GridElement: {fileID: 114770670123683002, guid: f520f55fd0a5e324d8c670060fe2f315,
     type: 2}
+  SpreadFrequency: 3
   SpreadOdds: 81
   ForestDensity: 81
   Width: 10

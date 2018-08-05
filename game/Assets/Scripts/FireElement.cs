@@ -39,38 +39,43 @@ public class FireElement : MonoBehaviour {
         ChangeTo(ElementState.BURNING);
     }
 
+    private void UpdateHealth()
+    {
+        if(Healt < 0.1f){
+            Healt = 0;
+            OnDeath();
+        }
+        else{
+            Healt -= Decay;
+        }
+    }
+
+    private void UpdateElementHealth()
+    {
+        var gridElementHealth = gameObject.GetComponent<GridElement>().Health;
+
+        if(gridElementHealth < 0.1f)
+        {
+            gameObject.GetComponent<GridElement>().OnDeath();
+            ChangeTo(ElementState.DEAD);
+        }
+        else
+        {
+            gameObject.GetComponent<GridElement>().Health -= Damage;
+        }
+    }
+
     private void Update() {
         if(!isDead)
-        {            
+        {
             _currentTime += Time.deltaTime;
 
             if(_currentTime >= CoolDown)
             {
-                _currentTime = 0.0f;
-                var elementHealt = gameObject.GetComponent<GridElement>().Health;
-                
-                if(Healt < 0.1f || elementHealt == 0.0f)
-                {
-                    if(Healt < 0.1f)
-                    {
-                        OnDeath();
-                    }
-                    else
-                    {
-                        gameObject.GetComponent<GridElement>().Health -= Decay;
-                        ChangeTo(ElementState.IDLE);
-                    }
-                }
-                else if(elementHealt < 0.1f)
-                {
-                    gameObject.GetComponent<GridElement>().Health = 0.0f;
-                    ChangeTo(ElementState.DEAD);
-                }
-                else if(elementHealt > 0.0f)
-                {
-                    gameObject.GetComponent<GridElement>().Health -= Damage;
-                    ChangeTo(ElementState.BURNING);
-                }
+                UpdateHealth();
+                UpdateElementHealth();
+
+                _currentTime = 0.0f;                
             }
         }            
     }
