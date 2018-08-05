@@ -43,6 +43,6 @@ public class CameraMovement : MonoBehaviour {
             Mathf.Clamp(cameraRig.position.x, minPositionX, maxPositionX),
             transform.position.y,
             Mathf.Clamp(cameraRig.position.z, minPosY, maxPosY)
-            );
+        );
     }
 }

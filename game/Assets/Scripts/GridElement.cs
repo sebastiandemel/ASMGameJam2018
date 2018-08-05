@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TreeObject : MonoBehaviour {
+public class GridElement : MonoBehaviour {
 
 	public Vector2Int GridPosition;
 
