@@ -18,7 +18,7 @@ public class ForestManager : MonoBehaviour {
 
     public int MaxFires;
 
-    public int FireDecay;
+    public float FireDecay;
 
     public float FireSpreadSeconds;
 
@@ -129,7 +129,7 @@ public class ForestManager : MonoBehaviour {
         }
     }
 
-    void DecayFire(int x, int y)
+    public void DecayFire(int x, int y)
     {
         string targetFire = "fire-" + CreateKey(x, y);
         if(_fires.ContainsKey(targetFire))
@@ -266,12 +266,12 @@ public class ForestManager : MonoBehaviour {
         else if(_map[fire.X, fire.Y].Healt <= 0.1f){
             _map[fire.X, fire.Y].Healt = 0.0f;
         }
-        /*
+        
         if(fire.Healt == 0.0f){
             _fires.Remove(fireName);
             Debug.Log("Removed fire " + fireName);
         }
-        */
+        
     }
     void OnDrawGizmos() {
         if (_map != null) {                
