@@ -798,7 +798,7 @@ Prefab:
     - target: {fileID: 224194704166023298, guid: a1c8efbbb68c52346a38270db96215dc,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224548748492803360, guid: a1c8efbbb68c52346a38270db96215dc,
         type: 2}
@@ -808,7 +808,7 @@ Prefab:
     - target: {fileID: 224364931519915530, guid: a1c8efbbb68c52346a38270db96215dc,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224971802352229214, guid: a1c8efbbb68c52346a38270db96215dc,
         type: 2}
@@ -4209,14 +4209,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e2927805e469d439deb1ac61f6eeff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxFires: 0
-  FireDecay: 0
-  Padding: 0
-  TreeElement: {fileID: 0}
-  SpreadOdds: 0
-  ForestDensity: 0
-  Width: 0
-  Height: 0
+  MaxFires: 100
+  FireDecay: 10
+  Padding: 1
+  TreeElement: {fileID: 114067170099362190, guid: f520f55fd0a5e324d8c670060fe2f315,
+    type: 2}
+  SpreadOdds: 81
+  ForestDensity: 81
+  Width: 10
+  Height: 10
 --- !u!4 &1775792401
 Transform:
   m_ObjectHideFlags: 0
