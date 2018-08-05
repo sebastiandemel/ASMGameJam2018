@@ -1770,10 +1770,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Credits
-
-
-    Crew'
+  m_Text: "Credits\n\nCrew\nMatti Anttila, Johan Kiintola, Sebastian de Mel\n\nProgramming\nMatti
+    Anttila, Sebastian de Mel\n\nGraphics\nJohan Kiintola\n\nMusic \nJoonasD6"
 --- !u!222 &522546477
 CanvasRenderer:
   m_ObjectHideFlags: 0
