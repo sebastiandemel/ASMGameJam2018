@@ -20,9 +20,15 @@ public class ForestManager : MonoBehaviour {
 
     public int FireDecay;
 
+    public float FireSpreadSeconds;
+
     public int Padding;
+
+    public float GridSize;
+
+    public int Wiggle;
     
-    public TreeObject TreeElement;
+    public GridElement GridElement;
 
     [Range(0,100)]
     public int SpreadOdds;
@@ -69,7 +75,7 @@ public class ForestManager : MonoBehaviour {
     void Update() {
         _fireCalcTrigger += Time.deltaTime;
 
-        if(_fireCalcTrigger > 0.5f){
+        if(_fireCalcTrigger > FireSpreadSeconds){
             _fireCalcTrigger = 0.0f;
 
             foreach(var fire in _fires){
@@ -111,12 +117,12 @@ public class ForestManager : MonoBehaviour {
 
                 if(element.Type == ForestElementType.TREE){                    
                     // Wigle
-                    var wiggleX = _random.Next(-1, 1);
-                    var wiggleY = _random.Next(-1, 1);
+                    var wiggleX = _random.Next(-Wiggle, Wiggle);
+                    var wiggleY = _random.Next(-Wiggle, Wiggle);
 
                     Vector3 pos = new Vector3(x * centerX + gap + wiggleX, 0, y * centerY + gap + wiggleY );
       
-                    var newTree = Instantiate(TreeElement, pos, Quaternion.identity);
+                    var newTree = Instantiate(GridElement, pos, Quaternion.identity);
                     newTree.GridPosition = new Vector2Int(x, y);
                 }
             }
@@ -260,13 +266,13 @@ public class ForestManager : MonoBehaviour {
         else if(_map[fire.X, fire.Y].Healt <= 0.1f){
             _map[fire.X, fire.Y].Healt = 0.0f;
         }
-
+        /*
         if(fire.Healt == 0.0f){
             _fires.Remove(fireName);
             Debug.Log("Removed fire " + fireName);
         }
-    }    
-/*
+        */
+    }
     void OnDrawGizmos() {
         if (_map != null) {                
             var modelWidth = 12.0f;
@@ -286,5 +292,5 @@ public class ForestManager : MonoBehaviour {
                 }
             }
         }
-    }*/
+    }
 }
