@@ -204,7 +204,7 @@ public class ForestManager : MonoBehaviour {
         }
 
         // Right Middle
-        if(x + 1 < Width && _map[x - 1, y].Type == ForestElementType.TREE){
+        if(x + 1 < Width && _map[x + 1, y].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x + 1, y), _map[x + 1, y]);
         }
 
@@ -214,7 +214,7 @@ public class ForestManager : MonoBehaviour {
         }
 
         // Middle Bottom
-        if(y - 1 < Height && _map[x, y + 1].Type == ForestElementType.TREE){
+        if(y + 1 < Height && _map[x, y + 1].Type == ForestElementType.TREE){
             targets.Add(new Vector2Int(x, y + 1), _map[x, y + 1]);
         }
 

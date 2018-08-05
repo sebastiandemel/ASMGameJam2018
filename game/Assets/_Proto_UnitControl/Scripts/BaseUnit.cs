@@ -35,7 +35,7 @@ public class BaseUnit : MonoBehaviour {
         if(moveEffect!=null)
             moveEffect.SetActive(navMeshAgent.isStopped);
     }
-    private void Start() {
+    protected virtual void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = unitSpeed;
         currentHealth = maxHealth;
