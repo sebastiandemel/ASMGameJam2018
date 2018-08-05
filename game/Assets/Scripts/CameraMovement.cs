@@ -32,9 +32,7 @@ public class CameraMovement : MonoBehaviour {
         float moveZ = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveX, 0, moveZ);
-        cameraRig.velocity = movement * speed;
-
-      
+        cameraRig.velocity = movement * speed;      
     }
 
     private void LateUpdate()

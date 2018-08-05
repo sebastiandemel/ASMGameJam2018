@@ -162,12 +162,10 @@ public class FirefighterUnit : BaseUnit {
                  for (int i = 0; i < thingsOnFire.Length; i++)
                  {
 
-                    var tree = thingsOnFire[i].GetComponent<GridElement>();
+                    var tree = thingsOnFire[i].GetComponent<FireElement>();
                      if (tree != null)
                      {
-                        var gridPosition = tree.GridPosition;
-                        ForestManager.instance.DecayFire(gridPosition.x,gridPosition.y);
-                        
+                        tree.Healt -= 0.1f;                        
                      }
 
                  }

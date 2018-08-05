@@ -6,51 +6,39 @@ public class GridElement : MonoBehaviour {
 
 	public Vector2Int GridPosition;
 
-    private bool isDead;
+	public float Health = 1.0f;
+
+    private bool isDead = false;
+
+	private void Awake() {
+		Health = 1.0f;	
+	}
 
 	// Use this for initialization
 	void Start () {
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		var health = ForestManager.instance.GetHealt(GridPosition.x, GridPosition.y);
-		var childCount = gameObject.transform.childCount;
 		
-		if(health == 0.0f){			
-			if(!gameObject.transform.GetChild(2).gameObject.activeInHierarchy){
-				gameObject.transform.GetChild(0).gameObject.SetActive(false); // Idle
-				gameObject.transform.GetChild(1).gameObject.SetActive(false); // Burned
+		var fireElement = gameObject.GetComponent<FireElement>();
 
-				gameObject.transform.GetChild(2).gameObject.SetActive(true); // Burned
-                if (!isDead)
-                {
-                    OnDeath();
-                    isDead = true;
-                }
+		if(fireElement != null)
+		{
+			if(fireElement.isDead)
+			{
+				Destroy(fireElement);
+				Debug.Log("Fire destroyed");
 			}
 		}
-		else if(health == 1.0f) {
-			if(!gameObject.transform.GetChild(0).gameObject.activeInHierarchy){
-				gameObject.transform.GetChild(1).gameObject.SetActive(false); // Burning
-				gameObject.transform.GetChild(2).gameObject.SetActive(false); // Burned
-
-				gameObject.transform.GetChild(0).gameObject.SetActive(true); // Idle
-			}
-		}
-		else{			
-			if(!gameObject.transform.GetChild(1).gameObject.activeInHierarchy){
-				gameObject.transform.GetChild(0).gameObject.SetActive(false); // Idle
-				gameObject.transform.GetChild(2).gameObject.SetActive(false); // Burned
-
-				gameObject.transform.GetChild(1).gameObject.SetActive(true); // Burning
-			}
-		}
-
 	}
+
     void OnDeath()
     {
+		Health = 0;
+		isDead = true;
         //GameManager.manager.FailedTrees++;
-        //GameManager.manager.CheckState();
+        //GameManager.manager.CheckState();s
     }
 }
