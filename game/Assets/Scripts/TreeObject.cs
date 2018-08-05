@@ -6,6 +6,8 @@ public class TreeObject : MonoBehaviour {
 
 	public Vector2Int GridPosition;
 
+    private bool isDead;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -21,6 +23,11 @@ public class TreeObject : MonoBehaviour {
 				gameObject.transform.GetChild(1).gameObject.SetActive(false); // Burned
 
 				gameObject.transform.GetChild(2).gameObject.SetActive(true); // Burned
+                if (!isDead)
+                {
+                    OnDeath();
+                    isDead = true;
+                }
 			}
 		}
 		else if(health == 1.0f) {
@@ -41,4 +48,9 @@ public class TreeObject : MonoBehaviour {
 		}
 
 	}
+    void OnDeath()
+    {
+        //GameManager.manager.FailedTrees++;
+        //GameManager.manager.CheckState();
+    }
 }

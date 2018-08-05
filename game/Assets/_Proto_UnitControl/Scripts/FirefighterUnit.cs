@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,9 +16,27 @@ public class FirefighterUnit : BaseUnit {
     private Vector3 oldTarget;
     private float coolDownWater = 1f;
 
+    private int forestWidth;
+    private int forestHeight;
+
+    private int forestX;
+    private int forestY;
+
     private void Awake()
     {
         source = GetComponent<AudioSource>();
+
+    }
+
+    public void Start()
+    {
+        base.Start();
+        var forestLocation = ForestManager.instance.transform.position;
+        var forestGap = ForestManager.instance.Padding;
+        var forestGridSize = 12;
+
+        forestWidth = (ForestManager.instance.Width * (forestGridSize + forestGap) - forestGap);
+        forestHeight = (ForestManager.instance.Height * (forestGridSize + forestGap) - forestGap);
     }
 
     // Update is called once per frame
@@ -168,40 +187,60 @@ public class FirefighterUnit : BaseUnit {
     IEnumerator WaterCooldown(Vector3 target)
     {
         while (waterAmount>0)
-        {            
-            
-            Collider[] thingsOnFire = Physics.OverlapSphere(target, waterRadius, burnableMask);
+        {
             waterSprayEffect.SetActive(sprayWater);
-            //Vector3 lookAt = target - transform.position;
-            SpawnWater(target);
-           // transform.rotation = Quaternion.LookRotation(lookAt);
 
-            source.PlayOneShot(waterClip);
 
-            if (thingsOnFire != null)
+            var gridX = 0;
+            var gridY = 0;
+
+            if(target.x >= forestX && target.x <= forestWidth && target.z >= forestY && target.z <= forestHeight)
             {
-                int firesPutout = 0;
-                for (int i = 0; i < thingsOnFire.Length; i++)
-                {
-                    if (thingsOnFire[i].GetComponent<Burnable>() != null)
-                    {
-                        if (thingsOnFire[i].GetComponent<Burnable>().isOnFire)
-                        {
-                            thingsOnFire[i].GetComponent<Burnable>().isOnFire = false;
-                            takingDamage = false;
-                        }
-                        else
-                        {
-                            thingsOnFire[i].GetComponent<Burnable>().moistureAmount = 100;
-                        }
+                var locationXOnGrid = target.x - forestX;
+                gridX = (int)Math.Round(forestWidth / locationXOnGrid, 0) + 1;
 
-                        firesPutout++;
-                    }
-
-                }
-                Debug.Log("Fires put out " + firesPutout);
+                var locationYOnGrid = target.z - forestY;
+                gridY = (int)Math.Round(forestHeight / locationYOnGrid, 0) + 1;
             }
-            waterAmount--;
+
+
+            // Old extinguishing system
+            #region
+
+            /* Collider[] thingsOnFire = Physics.OverlapSphere(target, waterRadius, burnableMask);
+             waterSprayEffect.SetActive(sprayWater);
+             //Vector3 lookAt = target - transform.position;
+             SpawnWater(target);
+            // transform.rotation = Quaternion.LookRotation(lookAt);
+
+             source.PlayOneShot(waterClip);
+
+             if (thingsOnFire != null)
+             {
+                 int firesPutout = 0;
+                 for (int i = 0; i < thingsOnFire.Length; i++)
+                 {
+                     if (thingsOnFire[i].GetComponent<Burnable>() != null)
+                     {
+                         if (thingsOnFire[i].GetComponent<Burnable>().isOnFire)
+                         {
+                             thingsOnFire[i].GetComponent<Burnable>().isOnFire = false;
+                             takingDamage = false;
+                         }
+                         else
+                         {
+                             thingsOnFire[i].GetComponent<Burnable>().moistureAmount = 100;
+                         }
+
+                         firesPutout++;
+                     }
+
+                 }
+                 Debug.Log("Fires put out " + firesPutout);
+             }
+             waterAmount--;*/
+            #endregion 
+
             yield return new WaitForSeconds(coolDownWater);
 
         }

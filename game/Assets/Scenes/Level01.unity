@@ -122,7 +122,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -130,7 +130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 31.500002
+      value: -41.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -163,6 +163,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -268,7 +272,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -276,7 +280,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.5
+      value: -70.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -309,6 +313,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -452,7 +460,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -460,7 +468,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 33.9
+      value: -38.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -494,6 +502,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -511,7 +523,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -519,7 +531,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 30.9
+      value: -41.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -553,6 +565,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -575,7 +591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &116924801
 Transform:
   m_ObjectHideFlags: 0
@@ -881,7 +897,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -889,7 +905,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 30.9
+      value: -41.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -922,6 +938,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -1078,7 +1098,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1086,7 +1106,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7.9
+      value: -64.7
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1120,6 +1140,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -1137,7 +1161,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1145,7 +1169,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10.5
+      value: -62.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1178,6 +1202,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -1299,7 +1327,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1307,7 +1335,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10.5
+      value: -62.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1341,6 +1369,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -1358,7 +1390,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1366,7 +1398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 28.9
+      value: -43.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1399,6 +1431,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -1417,7 +1453,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1425,7 +1461,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 28.9
+      value: -43.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1459,6 +1495,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -1476,7 +1516,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1484,7 +1524,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 23.5
+      value: -49.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1518,6 +1558,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -1535,7 +1579,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4843315769272154, guid: 7344209c98d05304297aacfc9bd14516, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.30543017
+      value: -46.805435
       objectReference: {fileID: 0}
     - target: {fileID: 4843315769272154, guid: 7344209c98d05304297aacfc9bd14516, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1543,7 +1587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4843315769272154, guid: 7344209c98d05304297aacfc9bd14516, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.9
+      value: -63.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4843315769272154, guid: 7344209c98d05304297aacfc9bd14516, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1564,6 +1608,10 @@ Prefab:
     - target: {fileID: 4843315769272154, guid: 7344209c98d05304297aacfc9bd14516, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426225290224326, guid: 7344209c98d05304297aacfc9bd14516, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7344209c98d05304297aacfc9bd14516, type: 2}
@@ -1644,7 +1692,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1652,7 +1700,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 25.9
+      value: -46.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1686,6 +1734,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -1703,7 +1755,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1711,7 +1763,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 19.9
+      value: -52.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1744,6 +1796,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -1847,7 +1903,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1855,7 +1911,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 17.5
+      value: -55.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1889,6 +1945,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -1906,7 +1966,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1914,7 +1974,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 22.9
+      value: -49.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1935,6 +1995,10 @@ Prefab:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -2028,7 +2092,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2036,7 +2100,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 38.9
+      value: -33.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2070,6 +2134,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -2087,7 +2155,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2095,7 +2163,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 24.9
+      value: -47.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2129,6 +2197,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -2146,7 +2218,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2154,7 +2226,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 17.5
+      value: -55.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2187,6 +2259,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -2274,7 +2350,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2282,7 +2358,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 25.9
+      value: -46.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2316,6 +2392,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -2333,7 +2413,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2341,7 +2421,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 38.9
+      value: -33.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2374,6 +2454,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -2461,7 +2545,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2469,7 +2553,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 36.9
+      value: -35.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2502,6 +2586,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -2729,7 +2817,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2737,7 +2825,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 36.9
+      value: -35.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2770,6 +2858,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -2948,7 +3040,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2956,7 +3048,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 9.9
+      value: -62.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2990,6 +3082,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -3007,7 +3103,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3015,7 +3111,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4.9
+      value: -67.7
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3049,6 +3145,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -3066,7 +3166,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3074,7 +3174,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 31.500002
+      value: -41.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3107,6 +3207,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -3191,7 +3295,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3199,7 +3303,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 19.9
+      value: -52.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3232,6 +3336,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -3325,7 +3433,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3333,7 +3441,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 17.9
+      value: -54.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3366,6 +3474,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -3548,7 +3660,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3556,7 +3668,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 24.9
+      value: -47.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3589,6 +3701,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -3635,7 +3751,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3643,7 +3759,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 15.9
+      value: -56.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3676,6 +3792,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -3694,7 +3814,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3702,7 +3822,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 15.9
+      value: -56.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3735,6 +3855,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -3878,7 +4002,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3886,7 +4010,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 12.9
+      value: -59.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3919,6 +4043,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -3937,7 +4065,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3945,7 +4073,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 12.9
+      value: -59.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3979,6 +4107,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -3996,7 +4128,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4004,7 +4136,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4.9
+      value: -67.7
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4038,6 +4170,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -4046,6 +4182,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5,
     type: 2}
   m_PrefabInternal: {fileID: 1748019190}
+--- !u!1 &1775792399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775792401}
+  - component: {fileID: 1775792400}
+  m_Layer: 0
+  m_Name: GenerateForest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1775792400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1775792399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e2927805e469d439deb1ac61f6eeff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxFires: 0
+  FireDecay: 0
+  Padding: 0
+  TreeElement: {fileID: 0}
+  SpreadOdds: 0
+  ForestDensity: 0
+  Width: 0
+  Height: 0
+--- !u!4 &1775792401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1775792399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1848489541
 Prefab:
   m_ObjectHideFlags: 0
@@ -4055,7 +4239,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4063,7 +4247,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.5
+      value: -70.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4097,6 +4281,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -4114,7 +4302,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -31.25
+      value: -77.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4122,7 +4310,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 33.9
+      value: -38.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4156,6 +4344,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -4173,7 +4365,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4716156757002398, guid: 8f441b74cd5af2748a3b8c7bb216a6fd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -46.500004
       objectReference: {fileID: 0}
     - target: {fileID: 4716156757002398, guid: 8f441b74cd5af2748a3b8c7bb216a6fd, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4181,7 +4373,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4716156757002398, guid: 8f441b74cd5af2748a3b8c7bb216a6fd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -72.6
       objectReference: {fileID: 0}
     - target: {fileID: 4716156757002398, guid: 8f441b74cd5af2748a3b8c7bb216a6fd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4205,7 +4397,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1909077877844874, guid: 8f441b74cd5af2748a3b8c7bb216a6fd, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f441b74cd5af2748a3b8c7bb216a6fd, type: 2}
@@ -4379,7 +4571,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4387,7 +4579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7.9
+      value: -64.7
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4421,6 +4613,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -4438,7 +4634,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -47.6
+      value: -94.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4446,7 +4642,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 23.5
+      value: -49.1
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4480,6 +4676,10 @@ Prefab:
       propertyPath: m_Name
       value: ProtoTreeBurning (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
   m_IsPrefabAsset: 0
@@ -4497,7 +4697,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4505,7 +4705,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 17.9
+      value: -54.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4538,6 +4738,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -4631,7 +4835,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.600002
+      value: -70.100006
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4639,7 +4843,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 22.9
+      value: -49.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4660,6 +4864,10 @@ Prefab:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
@@ -4808,7 +5016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2125396720
 Transform:
   m_ObjectHideFlags: 0
@@ -4852,7 +5060,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.25
+      value: -85.75
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4860,7 +5068,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 9.9
+      value: -62.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4300673568070438, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4893,6 +5101,10 @@ Prefab:
     - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
       propertyPath: m_Name
       value: ProtoTreeBurning (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343884507509098, guid: 54acca5304db02843929f9d9272076f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54acca5304db02843929f9d9272076f5, type: 2}
