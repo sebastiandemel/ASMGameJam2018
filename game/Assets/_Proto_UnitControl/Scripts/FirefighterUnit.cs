@@ -203,6 +203,7 @@ public class FirefighterUnit : BaseUnit {
                 gridY = (int)Math.Round(forestHeight / locationYOnGrid, 0) + 1;
             }
 
+            //ForestManager.instance.
 
             // Old extinguishing system
             #region
