@@ -11128,10 +11128,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Padding: 10
-  GridSize: 0
-  Wiggle: 0
+  GridSize: 14
+  Wiggle: 2
   GridElement: {fileID: 114067170099362190, guid: f520f55fd0a5e324d8c670060fe2f315,
     type: 2}
+  SpreadFrequency: 3
   SpreadOdds: 16
   ForestDensity: 54
   Width: 10
