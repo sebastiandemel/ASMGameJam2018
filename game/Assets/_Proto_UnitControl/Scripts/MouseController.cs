@@ -70,7 +70,8 @@ public class MouseController : MonoBehaviour {
         }
         else
         {
-            if(currentSelectedUnit!=null && !currentSelectedUnit.GetComponent<BaseUnit>().sprayWater)
+            
+            if (currentSelectedUnit!=null&& !currentSelectedUnit.GetComponent<BaseUnit>().sprayWater)
                 DeselectUnit();
 
         }

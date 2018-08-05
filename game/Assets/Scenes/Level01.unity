@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4260,17 +4260,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e2927805e469d439deb1ac61f6eeff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxFires: 100
-  FireDecay: 0.01
-  FireDecline: 0.2
-  FireSpreadSeconds: 5
   Padding: 1
   GridSize: 0
   Wiggle: 0
   GridElement: {fileID: 114770670123683002, guid: f520f55fd0a5e324d8c670060fe2f315,
     type: 2}
   SpreadOdds: 81
-  ForestDensity: 81
+  ForestDensity: 50
   Width: 10
   Height: 10
 --- !u!4 &1775792401
@@ -4453,7 +4449,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1909077877844874, guid: 8f441b74cd5af2748a3b8c7bb216a6fd, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f441b74cd5af2748a3b8c7bb216a6fd, type: 2}
@@ -4491,7 +4487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb595b7e14487a240894d474f0f80cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFailedTrees: 0
+  maxFailedTrees: 1
+  firesActive: 0
   uiManager: {fileID: 1923962060}
   audioManager: {fileID: 1923962063}
   forest: {fileID: 116924800}

@@ -27,10 +27,12 @@ public class GridElement : MonoBehaviour {
 		if(fireElement != null)
 		{
 			if(fireElement.isDead)
-			{
-				Destroy(fireElement);
+			{                
+                Destroy(fireElement);
 				Debug.Log("Fire destroyed");
-			}
+                GameManager.manager.firesActive--;
+                GameManager.manager.CheckState();
+            }
 		}
 	}
 
@@ -38,7 +40,7 @@ public class GridElement : MonoBehaviour {
     {
 		Health = 0;
 		isDead = true;
-        //GameManager.manager.FailedTrees++;
-        //GameManager.manager.CheckState();s
+        GameManager.manager.FailedTrees++;
+        GameManager.manager.CheckState();
     }
 }

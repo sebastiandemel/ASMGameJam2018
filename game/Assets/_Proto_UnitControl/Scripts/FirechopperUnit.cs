@@ -9,10 +9,6 @@ public class FirechopperUnit : BaseUnit {
 
     public bool watered;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
 	protected override void Update () {
