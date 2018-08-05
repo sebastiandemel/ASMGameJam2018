@@ -26,7 +26,7 @@ public class FirefighterUnit : BaseUnit {
     protected override void Update () {
         base.Update();        
 
-        if (sprayWater && waterAmount >0 && Input.GetMouseButtonDown(0))
+        if (isSelected && sprayWater && waterAmount >0 && Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -169,13 +169,13 @@ public class FirefighterUnit : BaseUnit {
                      }
 
                  }
-                
+        
              }
              //waterAmount--;
             #endregion 
 
             yield return new WaitForSeconds(coolDownWater);
-
+            
         }
 
         sprayWater = false;

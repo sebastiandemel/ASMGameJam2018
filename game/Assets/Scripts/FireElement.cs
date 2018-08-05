@@ -93,5 +93,6 @@ public class FireElement : MonoBehaviour {
                 ps.Clear();
             }
         }
+        
     }
 }
