@@ -1235,8 +1235,8 @@ MonoBehaviour:
   unitName: 
   unitSpeed: 15
   maxHealth: 15
-  waterAmount: 5
-  range: 5
+  waterAmount: 50
+  range: 20
   waterRadius: 2
   waterShotPrefab: {fileID: 1669966195368520, guid: 205693e38b581f64582499177814e103,
     type: 2}
@@ -1254,6 +1254,7 @@ MonoBehaviour:
   waterSprayEffect: {fileID: 1509832554946018}
   anim: {fileID: 95514759556163790}
   deathClip: {fileID: 0}
+  waterClip: {fileID: 0}
 --- !u!114 &114272557675610350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7140,7 +7141,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
-    enabled: 0
+    enabled: 1
     mode: 0
     frameOverTime:
       serializedVersion: 2
@@ -7249,8 +7250,8 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     tilesX: 1
-    tilesY: 1
-    animationType: 0
+    tilesY: 4
+    animationType: 1
     rowIndex: 0
     cycles: 1
     uvChannelMask: -1
@@ -19562,7 +19563,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 087adc54e78795a41b6e8df4cc616454, type: 2}
+  - {fileID: 2100000, guid: 6d633b11bf1960a4d86f7264eaf086fd, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0

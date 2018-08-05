@@ -18,6 +18,11 @@ public class SceneSwitcher : MonoBehaviour {
         SceneManager.LoadScene(sceneIndex);
     }
 
+    public void SwitchSceneWithWait(int sceneIndex)
+    {
+        StartCoroutine(Fadeout(1.5f,sceneIndex)); 
+    }
+
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -27,4 +32,11 @@ public class SceneSwitcher : MonoBehaviour {
     {
         Application.Quit();
     }
+
+    IEnumerator Fadeout(float fadeTime, int sceneIndex)
+    {
+        yield return new WaitForSeconds(fadeTime);
+        SceneManager.LoadScene(sceneIndex);
+    }
+
 }
