@@ -61,9 +61,10 @@ public class GameManager : MonoBehaviour {
     public void LevelVictory()
     {
         Debug.Log("Level Clear");
+        uiManager.OpenScreen(uiManager.victoryScreen);
     }
     public void LevelFail()
     {
-
+        uiManager.OpenScreen(uiManager.failScreen);
     }
 }
